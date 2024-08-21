@@ -64,7 +64,14 @@ void Motor::forward() {
   analogWrite(L_ENB, LB_V);
   analogWrite(R_ENA, RA_V);
   analogWrite(R_ENB, RB_V);
-  
+  digitalWrite(MR_IN1, HIGH);
+  digitalWrite(MR_IN2, LOW);
+  digitalWrite(MR_IN3, HIGH);
+  digitalWrite(MR_IN4, LOW);
+  digitalWrite(ML_IN1, HIGH);
+  digitalWrite(ML_IN2, LOW);
+  digitalWrite(ML_IN3, HIGH);
+  digitalWrite(ML_IN4, LOW);
 
 }
 
